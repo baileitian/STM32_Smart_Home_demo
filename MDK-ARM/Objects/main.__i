@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\MDK-ARM -I ..\Core\Inc -I ..\Drivers\STM32F4xx_StdPeriph_Driver\inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Middlewares\delay -I ..\Middlewares\gpio -I ..\Middlewares\tim -I ..\Middlewares\usart -I ..\Middlewares\key -I ..\Middlewares\IWDG -I ..\Middlewares\GBK_LibDrive -I ..\Middlewares\LCD180C -I ..\Drivers\STM32F4xx_StdPeriph_Driver -I ..\Core\Src -I ..\Core\Src -I ..\Core\Inc -I ..\Core\Inc\Include -I ..\Middlewares\stm32f4_MLX90614 -I ..\Middlewares\sys -I ..\Middlewares\delay -I ..\Middlewares\ULTRASONIC -I ..\Middlewares\WAVE -I ..\Middlewares\beep -I ..\Middlewares\SYN6288 -I ..\Middlewares\DHT11 -I ..\Middlewares\ADC -I ..\NET\cJSON -I ..\NET\device -I ..\NET\MQTT -I ..\NET\onenet -I ..\Middlewares\RTC -I ..\Middlewares\BH1750
+-I.\RTE\_STM32F4x1
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="525" -DSTM32F401xE -DUSE_STDPERIPH_DRIVER -DSTM32F401xx
+-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d "..\Core\Src\main.c"
